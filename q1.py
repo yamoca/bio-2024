@@ -1,13 +1,12 @@
 firstnum = int(input("enter start int (n)"))
 i = int(input("enter digit to find (i)"))
 
-data = []
 collecteddata = ""
-for j in range(i):
-    collecteddata+= str(firstnum+j)
-    if len(collecteddata) == i:
-        break
 
+currentnum = firstnum
+while len(collecteddata) < i:
+    collecteddata += str(currentnum)
+    currentnum += 1
 
 
 
